@@ -82,288 +82,343 @@
 // // const bensonNew = `I'm ${firstName}, a ${year-birthYeah},years old ${job} !`;
 // // console.log(bensonNew);
 
-// // console.log(`just a regular string!`);
+// // // console.log(`just a regular string!`);
 
-// // console.log('string with \n\
-// // multiple \n\
-// // lines');
+// // // console.log('string with \n\
+// // // multiple \n\
+// // // lines');
 
-// // console.log(`string 
-// // with 
-// // several lines
-// // yes!`)
+// // // console.log(`string 
+// // // with 
+// // // several lines
+// // // yes!`)
 
-// // const age = 15;
-// // const isOldEnough = age >= 18;
+// // // const age = 15;
+// // // const isOldEnough = age >= 18;
 
-// // if(isOldEnough){
-// //     console.log('sarah can start driving');
-// // }
+// // // if(isOldEnough){
+// // //     console.log('sarah can start driving');
+// // // }
 
-// // // we can make it simpler by writing the condition as follows
+// // // // we can make it simpler by writing the condition as follows
 
-// // if(age >= 18){
-// //     console.log('sarah can start driving');
-// // }
+// // // if(age >= 18){
+// // //     console.log('sarah can start driving');
+// // // }
 
-// // //to add else block
+// // // //to add else block
 
-// // if(age >= 18){
-// //     console.log('sarah can start driving');
-// // }else{
-// //     const yearLeft = 18 - age;
-// //     console.log(`sarah is too young,wait another ${yearLeft} years!`);
-// // }
+// // // if(age >= 18){
+// // //     console.log('sarah can start driving');
+// // // }else{
+// // //     const yearLeft = 18 - age;
+// // //     console.log(`sarah is too young,wait another ${yearLeft} years!`);
+// // // }
 
-// // const birthYeah = 1992;
-// //  let century;
-// // if(birthYeah<= 2000){
-// //  century = 20;
-// // }else{
-// //     century = 21;
-// // }
-// // console.log(century);
-
-
-// // //type conversion
-
-// // const inputYear = '1992';
-// // console.log(Number(inputYear));
-// // console.log(Number(inputYear) + 18);
-
-// // console.log(Number('mwenda'));
-// // console.log(String(23));
-// // console.log(typeof(NaN));
-
-// // //type coarcion 
-// // console.log('I am ' + 23 + 'years old');
-
-// //5 falsy values 0, '' ,undifined ,NaN ,null
-// // console.log(Boolean(0));
-// // console.log(Boolean(undefined));
-// // console.log(Boolean(NaN));
-// // console.log(Boolean(null));
-// // console.log(Boolean('mwenda'));
-
-// // const money = 0;
-// // if(money){
-// //     console.log("don't spent it all ;");
-// // }else{
-// //     console.log('you should ger a job!');
-// // }
-
-// // let height;
-
-// // if(height){
-// // console.log('YAY! height is defined');
-// // }else{
-// //     console.log('height is undefined');
-// // }
-
-// //equality operators
-
-// // const age = 18;
-
-// // if(age === 18){
-// //     console.log('you just become an adult');
-// // }
-
-// // const favourite = Number(prompt("what's your favourite number?"));
-// // console.log(favourite);
-
-// // if(favourite === 23){
-// //     console.log('cool 23 is an amazing number');
-// // }else if(favourite === 7){
-// //     console.log('7 is also a cool number!');
-// // }else if(favourite === 9){
-// //     console.log('9 is also a cool number!')
-// // }else {
-// //     console.log('number is not 7,9 or 23');
-// // }
-
-// // if(favourite !== 23){
-// //     console.log('why not 23!');
-// // }
-
-// const hasDriversLicense = true;
-// const hasGoodVision = true;
+// // // const birthYeah = 1992;
+// // //  let century;
+// // // if(birthYeah<= 2000){
+// // //  century = 20;
+// // // }else{
+// // //     century = 21;
+// // // }
+// // // console.log(century);
 
 
-// console.log(hasDriversLicense || hasGoodVision);
-// console.log(!hasDriversLicense);
+// // // //type conversion
 
-// const shouldDrive = hasDriversLicense && hasGoodVision;
+// // // const inputYear = '1992';
+// // // console.log(Number(inputYear));
+// // // console.log(Number(inputYear) + 18);
 
-// // if(hasDriversLicense && hasGoodVision){
-// //     console.assert.log('Sarah can drive');
-// // }else{
-// //     console.log('someone else drive please');
-// // }
+// // // console.log(Number('mwenda'));
+// // // console.log(String(23));
+// // // console.log(typeof(NaN));
 
-// // const isTired = false;
-// // console.log(hasDriversLicense && hasGoodVision && isTired);
+// // // //type coarcion 
+// // // console.log('I am ' + 23 + 'years old');
 
-// // if(hasDriversLicense && hasGoodVision && !isTired){
-// //     console.log('Sarah can drive');
-// // }else{
-// //     console.log('someone else drive please');
-// // }
+// // //5 falsy values 0, '' ,undifined ,NaN ,null
+// // // console.log(Boolean(0));
+// // // console.log(Boolean(undefined));
+// // // console.log(Boolean(NaN));
+// // // console.log(Boolean(null));
+// // // console.log(Boolean('mwenda'));
 
-// // if (today < yesterday){
-// //         self.improve()
-// // }else{
-// //     keepGoing()
-// // }
+// // // const money = 0;
+// // // if(money){
+// // //     console.log("don't spent it all ;");
+// // // }else{
+// // //     console.log('you should ger a job!');
+// // // }
 
-// // //life motto
-// // if(sad() === true){
-// //     sad().stop();
-// //     beAwesome();
-// // }
+// // // let height;
 
-// // // its up to you
+// // // if(height){
+// // // console.log('YAY! height is defined');
+// // // }else{
+// // //     console.log('height is undefined');
+// // // }
 
-// // if(youwant()=== true){
-// //     youcan();
-// // }else{
-// //     (youCant);
-// // }
+// // //equality operators
 
-// // const scoreDolphins = ((96+108+89)/3);
-// // const scoreKoalas = ((88+91+110)/3);
+// // // const age = 18;
 
-// // if (scoreDolphins > scoreKoalas) {
-// //     console.log("dolphins win the trophy");
-// // } elseif(scoreKoalas > scoreDolphins)
-// // {
-// //     console.log("koalas win the trophy");
-// // }elseif(scoreDolphins === scoreKoalas)
-// // {
-// //     console.log("both wins the trophy");
-// // }
+// // // if(age === 18){
+// // //     console.log('you just become an adult');
+// // // }
 
-// // const scoreDolphins = ((97+112+81)/3);
-// // const scoreKoalas = ((109+95+86)/3);
-// // console.log(scoreDolphins,scoreKoalas);
-// // if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
-// //     console.log("dolphins win the trophy");
-// // } else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) 
-// // {
+// // // const favourite = Number(prompt("what's your favourite number?"));
+// // // console.log(favourite);
 
-// //     console.log("koalas win the trophy");
-// // }else if(scoreDolphins === scoreKoalas && scoreDolphins >= 100 && scoreKoalas >= 100)
-// // {
-// //     console.log("both wins the trophy");
-// // }
+// // // if(favourite === 23){
+// // //     console.log('cool 23 is an amazing number');
+// // // }else if(favourite === 7){
+// // //     console.log('7 is also a cool number!');
+// // // }else if(favourite === 9){
+// // //     console.log('9 is also a cool number!')
+// // // }else {
+// // //     console.log('number is not 7,9 or 23');
+// // // }
 
-// //The swutch statement
+// // // if(favourite !== 23){
+// // //     console.log('why not 23!');
+// // // }
 
-// // const day = 'sunday';
+// // const hasDriversLicense = true;
+// // const hasGoodVision = true;
 
-// // switch(day){
-// //     case 'monday'://day === monday
-// //     console.log('plan course structure');
-// //     console.log('go for coding meet up');
-// //     break;
-// //     case 'tuesday':
-// //         console.log('prepare theory videos');
-// //         break;
-// //         case 'wensday':
-// //         case 'thursday':
-// //             console.log('write code examples');
-// //             break;
-// //             case 'friday':
-// //                 console.log('record videos');
-// //                 break;
-// //                 case 'saturday':
-// //                 case 'sunday':
-// //                     console.log('enjoy the weekend,take eunice for a date');
-// //                     break;
-// //                     default:
-// //                         console.log('not a valid day');
-// // }
 
-// // const day = 'wensday';
+// // console.log(hasDriversLicense || hasGoodVision);
+// // console.log(!hasDriversLicense);
 
-// // if(day === 'monday'){
-// //     console.log('plan course structure');
-// //     console.log('go for coding meet up');
+// // const shouldDrive = hasDriversLicense && hasGoodVision;
 
-// // }else if (day === 'tuesday'){
-// //     console.log('prepare theory videos');
+// // // if(hasDriversLicense && hasGoodVision){
+// // //     console.assert.log('Sarah can drive');
+// // // }else{
+// // //     console.log('someone else drive please');
+// // // }
 
-// // }else if (day === 'wensday' || day === 'thursday')
-// // {
-// //     console.log('write code examples');
+// // // const isTired = false;
+// // // console.log(hasDriversLicense && hasGoodVision && isTired);
 
-// // }else if(day === 'friday'){
-// //     console.log('record videos');
-// // }else if (day === 'saturday' || day == 'sunday') 
-// // {
-// //     console.log('enjoy the weekend,take eunice for a date');
-// // }else{
-// //     console.log('not a valid day');
-// // }
+// // // if(hasDriversLicense && hasGoodVision && !isTired){
+// // //     console.log('Sarah can drive');
+// // // }else{
+// // //     console.log('someone else drive please');
+// // // }
 
-// //Ternary operator for the conditional 
+// // // if (today < yesterday){
+// // //         self.improve()
+// // // }else{
+// // //     keepGoing()
+// // // }
 
-// // const age = 23;
+// // // //life motto
+// // // if(sad() === true){
+// // //     sad().stop();
+// // //     beAwesome();
+// // // }
 
-// // // age >= 18 ? console.log('i like to drink wine') : console.log('i would like to drink water');
-// // // //make it simpler
-// // age >= 18 ? 'wine' : 'water';//the we can store this as a variable
+// // // // its up to you
 
-// // const drink = age >= 18 ? 'wine' : 'water';
-// // console.log(drink);
+// // // if(youwant()=== true){
+// // //     youcan();
+// // // }else{
+// // //     (youCant);
+// // // }
 
-// // //unlike  if else statement ,ternary operator which is a expression can be used on template literal
+// // // const scoreDolphins = ((96+108+89)/3);
+// // // const scoreKoalas = ((88+91+110)/3);
 
-// // console.log(`i would like to drink ${age >= 18 ? 'wine' : 'water'}`)
+// // // if (scoreDolphins > scoreKoalas) {
+// // //     console.log("dolphins win the trophy");
+// // // } elseif(scoreKoalas > scoreDolphins)
+// // // {
+// // //     console.log("koalas win the trophy");
+// // // }elseif(scoreDolphins === scoreKoalas)
+// // // {
+// // //     console.log("both wins the trophy");
+// // // }
 
-// const bill = 275;
-// const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.20;
-// console.log(`the bill was ${bill} and the tip was ${tip} and the total was ${bill + tip }`);
+// // // const scoreDolphins = ((97+112+81)/3);
+// // // const scoreKoalas = ((109+95+86)/3);
+// // // console.log(scoreDolphins,scoreKoalas);
+// // // if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+// // //     console.log("dolphins win the trophy");
+// // // } else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) 
+// // // {
 
-// const bill2 = 40;
-// const tip2 = bill2 <= 300 && bill2 >= 50 ? bill2 * 0.15 : bill2 * 0.20;
-// console.log(`the bill was ${bill2} and the tip was ${tip2} and the total was ${bill2 + tip2}`)
+// // //     console.log("koalas win the trophy");
+// // // }else if(scoreDolphins === scoreKoalas && scoreDolphins >= 100 && scoreKoalas >= 100)
+// // // {
+// // //     console.log("both wins the trophy");
+// // // }
 
-//functions
+// // //The swutch statement
 
-function logger(){
-    console.log('my name is Benson');
-}
-//calling/invoking /running the function
-logger();
-logger();
-logger();
-logger();
+// // // const day = 'sunday';
 
-function fruitProcessor (apples ,oranges){
-    console.log(apples ,oranges);
-    const juice = `juice with ${apples} appples and ${oranges} oranges.`;
-    return juice;
-}
+// // // switch(day){
+// // //     case 'monday'://day === monday
+// // //     console.log('plan course structure');
+// // //     console.log('go for coding meet up');
+// // //     break;
+// // //     case 'tuesday':
+// // //         console.log('prepare theory videos');
+// // //         break;
+// // //         case 'wensday':
+// // //         case 'thursday':
+// // //             console.log('write code examples');
+// // //             break;
+// // //             case 'friday':
+// // //                 console.log('record videos');
+// // //                 break;
+// // //                 case 'saturday':
+// // //                 case 'sunday':
+// // //                     console.log('enjoy the weekend,take eunice for a date');
+// // //                     break;
+// // //                     default:
+// // //                         console.log('not a valid day');
+// // // }
 
-const appleJuice = fruitProcessor(5,0);
-console.log(appleJuice);
+// // // const day = 'wensday';
 
-const appleOrangeJuice = fruitProcessor(2,4);
-console.log(appleOrangeJuice);
+// // // if(day === 'monday'){
+// // //     console.log('plan course structure');
+// // //     console.log('go for coding meet up');
 
-//function declaration
+// // // }else if (day === 'tuesday'){
+// // //     console.log('prepare theory videos');
 
-function calAge1(birthYeah){
-    return 2037 - birthYeah;
+// // // }else if (day === 'wensday' || day === 'thursday')
+// // // {
+// // //     console.log('write code examples');
+
+// // // }else if(day === 'friday'){
+// // //     console.log('record videos');
+// // // }else if (day === 'saturday' || day == 'sunday') 
+// // // {
+// // //     console.log('enjoy the weekend,take eunice for a date');
+// // // }else{
+// // //     console.log('not a valid day');
+// // // }
+
+// // //Ternary operator for the conditional 
+
+// // // const age = 23;
+
+// // // // age >= 18 ? console.log('i like to drink wine') : console.log('i would like to drink water');
+// // // // //make it simpler
+// // // age >= 18 ? 'wine' : 'water';//the we can store this as a variable
+
+// // // const drink = age >= 18 ? 'wine' : 'water';
+// // // console.log(drink);
+
+// // // //unlike  if else statement ,ternary operator which is a expression can be used on template literal
+
+// // // console.log(`i would like to drink ${age >= 18 ? 'wine' : 'water'}`)
+
+// // const bill = 275;
+// // const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.20;
+// // console.log(`the bill was ${bill} and the tip was ${tip} and the total was ${bill + tip }`);
+
+// // const bill2 = 40;
+// // const tip2 = bill2 <= 300 && bill2 >= 50 ? bill2 * 0.15 : bill2 * 0.20;
+// // console.log(`the bill was ${bill2} and the tip was ${tip2} and the total was ${bill2 + tip2}`)
+
+// //functions
+
+// function logger(){
+//     console.log('my name is Benson');
+// }
+// //calling/invoking /running the function
+// logger();
+// logger();
+// logger();
+// logger();
+
+// function fruitProcessor (apples ,oranges){
+//     console.log(apples ,oranges);
+//     const juice = `juice with ${apples} appples and ${oranges} oranges.`;
+//     return juice;
+// }
+
+// const appleJuice = fruitProcessor(5,0);
+// console.log(appleJuice);
+
+// const appleOrangeJuice = fruitProcessor(2,4);
+// console.log(appleOrangeJuice);
+
+// //function declaration
+
+// function calAge1(birthYeah){
+//     return 2037 - birthYeah;
     
-}
+// }
 
-const age1 = calAge1(1992);
+// const age1 = calAge1(1992);
 
-//function expression
+// //function expression
 
-const calAge2 = function (birthYeah){
-    return 2037 - birthYeah;
-}
-const age2 = calAge2(1991);
-console.log(age1,age2);
+// const calAge2 = function (birthYeah){
+//     return 2037 - birthYeah;
+// }
+// const age2 = calAge2(1991);
+// console.log(age1,age2);
+
+// //arrow functions
+
+// const calcAge3 = birthYeah => 2037 - birthYeah;
+// const age3 = calcAge3(1992);
+// console.log(age3);
+
+
+
+
+// const yearsUntilRetirement = (birthYeah,firstName) => {
+//     const age = 2037 - birthYeah;
+//     const retirement = 65 - age;
+//     // return retirement;
+//     return `${firstName} retires in ${retirement} years.`
+// };
+// console.log(yearsUntilRetirement(1992, 'Benson'));
+// console.log(yearsUntilRetirement(1995, 'Bob'));
+
+// functions calling function
+
+//     function cutFruitPieces (fruit){
+//         return fruit * 4
+//     }
+
+
+// function fruitProcessor (apples ,oranges){
+//   const applePieces =  cutFruitPieces(apples);
+//   const orangePieces = cutFruitPieces(oranges);
+
+//     console.log(apples ,oranges);
+//     const juice = `juice with ${applePieces} appples and ${orangePieces} oranges.`;
+//     return juice;
+// }
+// console.log(fruitProcessor(2,3));
+
+// reviwing functions
+    const calcAge = function(birthYeah){
+        return 2037 - birthYeah;
+    };
+
+    const yearsUntilRetirement = function (birthYeah,firstName) {
+        const age = calcAge(birthYeah);
+       const retirement = 65 - age;
+          if(retirement > 0){
+              console.log(`${firstName} retires in ${retirement} years.`);
+            return retirement;
+          }else{
+              console.log(`${firstName} has already retired.`);
+            return -1;
+          }
+        //  return `${firstName} retires in ${retirement} years.`
+     };
+     console.log(yearsUntilRetirement(1992,'Benson'));
+     console.log(yearsUntilRetirement(1950,'Benson'));
