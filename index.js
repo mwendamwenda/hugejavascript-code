@@ -404,21 +404,40 @@
 // console.log(fruitProcessor(2,3));
 
 // reviwing functions
-    const calcAge = function(birthYeah){
-        return 2037 - birthYeah;
-    };
+    // const calcAge = function(birthYeah){
+    //     return 2037 - birthYeah;
+    // };
 
-    const yearsUntilRetirement = function (birthYeah,firstName) {
-        const age = calcAge(birthYeah);
-       const retirement = 65 - age;
-          if(retirement > 0){
-              console.log(`${firstName} retires in ${retirement} years.`);
-            return retirement;
-          }else{
-              console.log(`${firstName} has already retired.`);
-            return -1;
-          }
-        //  return `${firstName} retires in ${retirement} years.`
-     };
-     console.log(yearsUntilRetirement(1992,'Benson'));
-     console.log(yearsUntilRetirement(1950,'Benson'));
+    // const yearsUntilRetirement = function (birthYeah,firstName) {
+    //     const age = calcAge(birthYeah);
+    //    const retirement = 65 - age;
+    //       if(retirement > 0){
+    //           console.log(`${firstName} retires in ${retirement} years.`);
+    //         return retirement;
+    //       }else{
+    //           console.log(`${firstName} has already retired.`);
+    //         return -1;
+    //       }
+    //     //  return `${firstName} retires in ${retirement} years.`
+    //  };
+    //  console.log(yearsUntilRetirement(1992,'Benson'));
+    //  console.log(yearsUntilRetirement(1950,'Benson'));
+
+    const calAverage = (a,b,c) => (a + b + c ) / 3;
+
+    const scoreDoplhins = calAverage(44,23,71);
+    const scoreKoalas = calAverage(65,54,49);
+
+    console.log(scoreDoplhins,scoreKoalas);
+
+    const checkWinner =  function(avgDoplphins,avgKoalas){
+        if(avgDoplphins >= 2 * avgKoalas){
+            console.log(`Dolphins win the trophy ${avgDoplphins} vs ${avgKoalas}`);
+        }else if (avgKoalas >= avgDoplphins * 2)
+        {
+            console.log(`Koalas wins the trophy (${avgKoalas} vs ${avgDoplphins}`);
+        }else{
+            console.log('no team wins');
+        }
+    }
+    checkWinner(scoreDoplhins,scoreKoalas);
