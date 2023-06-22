@@ -423,21 +423,129 @@
     //  console.log(yearsUntilRetirement(1992,'Benson'));
     //  console.log(yearsUntilRetirement(1950,'Benson'));
 
-    const calAverage = (a,b,c) => (a + b + c ) / 3;
+    // const calAverage = (a,b,c) => (a + b + c ) / 3;
 
-    const scoreDoplhins = calAverage(44,23,71);
-    const scoreKoalas = calAverage(65,54,49);
+    // const scoreDoplhins = calAverage(44,23,71);
+    // const scoreKoalas = calAverage(65,54,49);
 
-    console.log(scoreDoplhins,scoreKoalas);
+    // console.log(scoreDoplhins,scoreKoalas);
 
-    const checkWinner =  function(avgDoplphins,avgKoalas){
-        if(avgDoplphins >= 2 * avgKoalas){
-            console.log(`Dolphins win the trophy ${avgDoplphins} vs ${avgKoalas}`);
-        }else if (avgKoalas >= avgDoplphins * 2)
-        {
-            console.log(`Koalas wins the trophy (${avgKoalas} vs ${avgDoplphins}`);
-        }else{
-            console.log('no team wins');
-        }
-    }
-    checkWinner(scoreDoplhins,scoreKoalas);
+    // const checkWinner =  function(avgDoplphins,avgKoalas){
+    //     if(avgDoplphins >= 2 * avgKoalas){
+    //         console.log(`Dolphins win the trophy ${avgDoplphins} vs ${avgKoalas}`);
+    //     }else if (avgKoalas >= avgDoplphins * 2)
+    //     {
+    //         console.log(`Koalas wins the trophy (${avgKoalas} vs ${avgDoplphins}`);
+    //     }else{
+    //         console.log('no team wins');
+    //     }
+    // }
+    // checkWinner(scoreDoplhins,scoreKoalas);
+
+
+    // const friend1 = 'michael';
+    // const friend2 = 'Sharon';
+    // const friend3 = 'kevin';
+    // const friend4 = 'simiyu';
+    // // creat an array instead
+
+    // const friends = ['michael','sharon','kevin','simiyu'];
+    // console.log(friends);
+
+    // //another way  to create an array
+
+    // const yearsD = new Array(1991,1992,1993,1994);
+
+    // console.log(friends[0]); 
+    // console.log(friends[friends.length-1]);//to get the last element in an array;
+
+    // friends[2] = 'Alex';
+    // console.log(friends);
+
+    // // we can store different types of data in one array
+    // const firstName = 'benson';
+    // const mwenda =[firstName,'mwenda',2037-1992,'teacher' ,friends];
+    // console.log(mwenda);
+
+    // //excercise 
+
+    // const calcAge = function(birthYeah){
+    //          return 2037 - birthYeah;
+    //      };
+    // const years = [1990, 1993 ,1998,1967,1997];
+
+    // const age1 = calcAge(years[0]);
+    // const age2 = calcAge(years[1]);
+    // const age3 = calcAge(years[years.length - 1]);
+    // console.log(age1,age2,age3);
+
+    // //to store them in an array
+
+    // const ages = [calcAge(years[0]),calcAge(years[1]),calcAge(years[years.length - 1])];
+    // console.log(ages);
+
+    //add elements
+
+//     const friends = ['michael','sharon','kevin','simiyu'];
+//     friends.push('milan');
+//     console.log(friends);
+//     friends.unshift('gathogo');
+//     console.log(friends);
+
+// //remove elements
+
+// friends.pop();
+// console.log(friends);
+// friends.shift();
+// console.log(friends);
+// console.log(friends.indexOf('sharon'));
+// console.log(friends.includes('sharon'));
+
+// if(friends.includes('sharon')){
+//     console.log('you have a friend called sharon');
+// }
+
+//objects
+
+const benson = {
+    firstName: 'benson',
+    lastName : 'mwenda',
+    age : 2037 - 1992,
+    job : 'businessman',
+    friends : ['tonnie','james','kevin','alex']
+
+}
+console.log(benson);
+
+// dot notation
+
+console.log(benson.lastName);
+
+//brackets notation
+
+console.log(benson['lastName']);
+
+
+const nameKey = 'Name';
+console.log(benson['first' + nameKey]);
+console.log(benson['last' + nameKey]);
+ 
+const interestIn = prompt('what do you want to know about benson choose between ,firstName,lastName,age,job and friends');
+console.log(benson[interestIn]);
+
+if(benson[interestIn]) {
+    console.log(benson[interestIn])
+}else{
+    console.log('Wrong request! Choose between firstName,lastName,age,job and friends ');
+}
+
+//to add an  element on an object
+
+benson.location = 'kenya';
+benson['kid'] = 'Milan';
+
+console.log(benson);
+
+console.log(`${benson.firstName} has ${benson.friends.length} friends and his best friend is called ${benson.friends[0]}`);
+
+//adding functions to objects
