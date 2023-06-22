@@ -507,45 +507,63 @@
 
 //objects
 
+// const benson = {
+//     firstName: 'benson',
+//     lastName : 'mwenda',
+//     age : 2037 - 1992,
+//     job : 'businessman',
+//     friends : ['tonnie','james','kevin','alex']
+
+// }
+// console.log(benson);
+
+// // dot notation
+
+// console.log(benson.lastName);
+
+// //brackets notation
+
+// console.log(benson['lastName']);
+
+
+// const nameKey = 'Name';
+// console.log(benson['first' + nameKey]);
+// console.log(benson['last' + nameKey]);
+ 
+// const interestIn = prompt('what do you want to know about benson choose between ,firstName,lastName,age,job and friends');
+// console.log(benson[interestIn]);
+
+// if(benson[interestIn]) {
+//     console.log(benson[interestIn])
+// }else{
+//     console.log('Wrong request! Choose between firstName,lastName,age,job and friends ');
+// }
+
+// //to add an  element on an object
+
+// benson.location = 'kenya';
+// benson['kid'] = 'Milan';
+
+// console.log(benson);
+
+// console.log(`${benson.firstName} has ${benson.friends.length} friends and his best friend is called ${benson.friends[0]}`);
+
+//adding functions to objects
+
+
 const benson = {
     firstName: 'benson',
     lastName : 'mwenda',
-    age : 2037 - 1992,
+    age : 1992,
     job : 'businessman',
-    friends : ['tonnie','james','kevin','alex']
+    friends : ['tonnie','james','kevin','alex'],
+    hasDriversLicense: true,
+
+    calcAge : function(birthYeah){
+        return 2037 - birthYeah;
+    }
 
 }
-console.log(benson);
+console.log(benson.calcAge(1992));
+console.log(benson['calcAge'](1992));
 
-// dot notation
-
-console.log(benson.lastName);
-
-//brackets notation
-
-console.log(benson['lastName']);
-
-
-const nameKey = 'Name';
-console.log(benson['first' + nameKey]);
-console.log(benson['last' + nameKey]);
- 
-const interestIn = prompt('what do you want to know about benson choose between ,firstName,lastName,age,job and friends');
-console.log(benson[interestIn]);
-
-if(benson[interestIn]) {
-    console.log(benson[interestIn])
-}else{
-    console.log('Wrong request! Choose between firstName,lastName,age,job and friends ');
-}
-
-//to add an  element on an object
-
-benson.location = 'kenya';
-benson['kid'] = 'Milan';
-
-console.log(benson);
-
-console.log(`${benson.firstName} has ${benson.friends.length} friends and his best friend is called ${benson.friends[0]}`);
-
-//adding functions to objects
