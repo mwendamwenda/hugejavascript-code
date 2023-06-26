@@ -551,19 +551,57 @@
 //adding functions to objects
 
 
-const benson = {
-    firstName: 'benson',
-    lastName : 'mwenda',
-    age : 1992,
-    job : 'businessman',
-    friends : ['tonnie','james','kevin','alex'],
-    hasDriversLicense: true,
+// const benson = {
+//     firstName: 'benson',
+//     lastName : 'mwenda',
+//     age : 1992,
+//     job : 'businessman',
+//     friends : ['tonnie','james','kevin','alex'],
+//     hasDriversLicense: true,
 
-    calcAge : function(birthYeah){
-        return 2037 - birthYeah;
-    }
+//     calcAge : function(birthYeah){
+//         return 2037 - birthYeah;
+//     }
 
-}
-console.log(benson.calcAge(1992));
-console.log(benson['calcAge'](1992));
+// }
+// console.log(benson.calcAge(1992));
+// console.log(benson['calcAge'](1992));
+
+
+// console.log('lifting weights repatation 1');
+// console.log('lifting weights repatation 2');
+// console.log('lifting weights repatation 3');
+// console.log('lifting weights repatation 4');
+// console.log('lifting weights repatation 5');
+// console.log('lifting weights repatation 6');
+// console.log('lifting weights repatation 7');
+// console.log('lifting weights repatation 8');
+// console.log('lifting weights repatation 9');
+// console.log('lifting weights repatation 10');
+
+// for(let rep = 1; rep <= 10;rep++){
+//     console.log(`lifting weights repeation ${rep}`);
+
+// }
+
+// for(let step =1; step <= 10; step++){
+//     console.log(`walk ${step} and then stop`);
+// }
+
+// for(let shot =1; shot <= 5;shot++){
+//     console.log(`drink ${shot} and go home`);
+// }
+
+// for(let drive = 1; drive <= 10; drive++);{
+//     console.log(`driving  for these kms ${drive}`);
+// }
+
+const bensonArray = [
+    'benson',
+    'mwenda',
+     2037 - 1992,
+    'businessman',
+    ['tonnie','james','kevin','alex']
+
+];
 
