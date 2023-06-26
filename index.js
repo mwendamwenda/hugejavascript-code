@@ -605,3 +605,6 @@ const bensonArray = [
 
 ];
 
+for(let i = 0; ;i++ ){
+    console.log(bensonArray[i])
+}
